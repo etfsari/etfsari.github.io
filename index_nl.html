@@ -87,14 +87,18 @@
             <div class="container">
                 <h2>Contacteer Ons</h2>
                 <p>Heeft u vragen of heeft u een offerte nodig? Neem contact met ons op!</p>
-                <form id="contactForm" action="https://formspree.io/f/mayrrvwj" method="POST">
-                    <label for="name">Naam :</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="email">E-mail :</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="message">Beright :</label>
-                    <textarea id="message" name="message" required></textarea>
-                    <button type="submit">Verzenden </button>
+                <!-- modify this form HTML and place wherever you want your form -->
+                <form action="https://formspree.io/f/mayrrvwj" method="POST">
+                    <label>
+                        uw E-mail:
+                        <input type="email" name="email">
+                    </label>
+                    <label>
+                        uw Beright:
+                        <textarea name="message"></textarea>
+                    </label>
+                    <!-- your other form fields go here -->
+                    <button type="submit">Verzenden</button>
                 </form>
             </div>
         </section>
