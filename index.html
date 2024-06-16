@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Language - Language Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="OIG3.jpg" alt="Easy Language Logo" class="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <div class="flags">
+                    <a href="index.html"><img
+                            src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
+                            alt="English Flag"></a>
+                    <a href="index_fr.html"><img src="https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg"
+                            alt="French Flag"></a>
+                    <a href="index_es.html"><img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg"
+                            alt="Spanish Flag"></a>
+                    <a href="index_nl.html"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg"
+                            alt="Dutch Flag"></a>
+                    <a href="index_tr.html"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg"
+                            alt="Turkish Flag"></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <div class="container">
+                <h2>Welcome to Easy Language</h2>
+                <p>Your one-stop solution for professional language services. We offer translation, interpretation, and
+                    language training tailored to your needs.</p>
+                <button id="learnMoreBtn">Learn More</button>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="service">
+                    <h3>Translation</h3>
+                    <p>Accurate and professional translation services for documents, websites, and more.</p>
+                </div>
+                <div class="service">
+                    <h3>Interpretation</h3>
+                    <p>Expert interpretation services for meetings, conferences, and events.</p>
+                </div>
+                <div class="service">
+                    <h3>Language Training</h3>
+                    <p>Personalized language training programs for individuals and businesses.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Easy Language is committed to bridging communication gaps through high-quality language services. Our
+                    team of experienced professionals is dedicated to helping you succeed in a globalized world.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Have questions or need a quote? Get in touch with us!</p>
+                <form id="contactForm" action="https://formspree.io/f/mayrrvwj" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Easy Language. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
