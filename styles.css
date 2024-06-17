@@ -73,9 +73,19 @@ header .flags img {
 
 /* Responsive Navigation */
 @media (max-width: 768px) {
-    header .flags {
-        margin-right: 10px;
-        /* Adjust margin for spacing */
+    header nav ul {
+        display: none;
+        /* Hide by default on small screens */
+        flex-direction: column;
+        width: 100%;
+        background-color: #004aad;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
     }
 
     .current-flag img {
@@ -114,31 +124,28 @@ header .flags img {
         cursor: pointer;
     }
 
-    header nav ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #004aad;
-        position: absolute;
-        top: 60px;
-        left: 0;
-    }
 
     header nav ul li {
         margin: 10px 0;
     }
 
-    header .burger-menu {
+    .burger-menu {
         display: block;
+        /* Display burger menu icon */
         cursor: pointer;
     }
 
-    header .burger-menu span {
+    .burger-menu span {
         display: block;
         width: 25px;
         height: 3px;
         margin: 5px auto;
         background-color: #fff;
+    }
+
+    .menu-opened nav ul {
+        display: flex;
+        /* Show navigation menu when burger menu is clicked */
     }
 }
 
