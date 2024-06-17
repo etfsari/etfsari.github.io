@@ -90,6 +90,10 @@ header .flags img {
         /* Optional: Adjust margins for better spacing */
     }
 
+    header nav ul li {
+        margin: 10px 0;
+    }
+
     header .flags img {
         display: block;
         /* Ensure flag images are displayed */
@@ -102,9 +106,6 @@ header .flags img {
     }
 }
 
-header nav ul li {
-    margin: 10px 0;
-}
 
 
 /* Section Styles */
