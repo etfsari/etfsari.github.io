@@ -77,39 +77,35 @@ header .flags img {
 
 /* Responsive Navigation */
 @media (max-width: 768px) {
-    header nav ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #004aad;
-        position: absolute;
-        top: 60px;
-        left: 0;
-    }
-
-    header nav ul li {
-        margin: 10px 0;
-    }
-
     header .flags {
-        display: none;
-        flex-direction: column;
-        width: 100%;
+        flex-direction: row;
+        display: flex;
+        justify-content: flex-end;
+        /* Adjust alignment as per your design */
+        align-items: center;
+        /* Adjust alignment as per your design */
+        width: auto;
+        /* Adjust width as needed */
+        margin-right: 10px;
+        /* Optional: Adjust margins for better spacing */
     }
 
-    header .burger-menu {
+    header .flags img {
         display: block;
+        /* Ensure flag images are displayed */
+        width: 30px;
+        /* Adjust size as needed */
+        height: auto;
+        margin: 0 5px;
+        /* Optional: Adjust margins for better spacing */
         cursor: pointer;
     }
-
-    header .burger-menu span {
-        display: block;
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        background-color: #fff;
-    }
 }
+
+header nav ul li {
+    margin: 10px 0;
+}
+
 
 /* Section Styles */
 section {
