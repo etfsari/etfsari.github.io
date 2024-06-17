@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Smooth scroll to services section
     const learnMoreBtn = document.getElementById('learnMoreBtn');
     learnMoreBtn.addEventListener('click', () => {
         window.scrollTo({
@@ -7,14 +8,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Form submission handling
     const contactForm = document.getElementById('contactForm');
     contactForm.addEventListener('submit', (event) => {
         event.preventDefault();
 
-        // Collect form data
         const formData = new FormData(contactForm);
 
-        // Send form data using fetch API
         fetch('https://formspree.io/f/mayrrvwj', {
             method: 'POST',
             body: formData,
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(data => {
                 if (data.ok) {
                     alert('Thank you for contacting us! Your message has been sent.');
-                    contactForm.reset(); // Optionally clear form fields
+                    contactForm.reset();
                 } else {
                     alert('Failed to send your message. Please try again later.');
                 }
@@ -37,6 +37,15 @@ document.addEventListener('DOMContentLoaded', () => {
             });
     });
 
+    // Mobile menu (hamburger menu) toggle functionality
+    const burgerMenu = document.querySelector('.burger-menu');
+    const navMenu = document.querySelector('header nav ul');
+
+    burgerMenu.addEventListener('click', () => {
+        navMenu.classList.toggle('menu-opened'); // Toggle menu visibility
+    });
+
+    // Language flags redirection
     const flags = {
         englishFlag: 'index.html',
         frenchFlag: 'index_fr.html',
@@ -46,12 +55,11 @@ document.addEventListener('DOMContentLoaded', () => {
         afghanFlag: 'index_af.html'
     };
 
-    // Add event listeners to each flag
     Object.keys(flags).forEach(flagId => {
         const flagElement = document.getElementById(flagId);
         if (flagElement) {
             flagElement.addEventListener('click', (event) => {
-                event.preventDefault(); // Prevent default link behavior
+                event.preventDefault();
                 window.location.href = flags[flagId];
             });
         }
