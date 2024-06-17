@@ -10,55 +10,39 @@
 
 <body>
     <!-- Header Section -->
-    <!-- Header Section -->
     <header>
         <div class="container">
             <div class="logo-container">
-                <img src="OIG3.jpg" alt="Easy Language Logo" class="logo">
+                <img src="OIG3.jpg" alt="اسانه ژبه لوگو" class="logo">
             </div>
             <nav>
                 <ul>
                     <li><a href="index_af.html">کورپاڼه</a></li>
-                    <li><a href="index_af.html#services">خدماتونه</a></li>
-                    <li><a href="index_af.html#about">ما اړول</a></li>
-                    <li><a href="index_af.html#contact">پیوستنې</a></li>
+                    <li><a href="index_af.html#services">خدمتونه</a></li>
+                    <li><a href="index_af.html#about">زموږ په اړه</a></li>
+                    <li><a href="index_af.html#contact">اړیکه</a></li>
                 </ul>
                 <div class="flags">
-                    <div class="current-flag">
-                        <a href="index_af.html"><img src="afghan_flag.png" alt="Afghan Flag"></a>
-                    </div>
-                    <div class="other-flags">
-                        <div class="flag-item"><a href="index.html"><img
-                                    src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
-                                    alt="English Flag"></a></div>
-                        <div class="flag-item"><a href="index_fr.html"><img
-                                    src="https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg"
-                                    alt="French Flag"></a></div>
-                        <div class="flag-item"><a href="index_es.html"><img
-                                    src="https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg"
-                                    alt="Spanish Flag"></a></div>
-                        <div class="flag-item"><a href="index_nl.html"><img
-                                    src="https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg"
-                                    alt="Dutch Flag"></a></div>
-                        <div class="flag-item"><a href="index_tr.html"><img
-                                    src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg"
-                                    alt="Turkish Flag"></a></div>
-                    </div>
+                    <a href="index.html"><img
+                            src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
+                            alt="English Flag"></a>
+                    <a href="index_fr.html"><img src="https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg"
+                            alt="French Flag"></a>
+                    <a href="index_es.html"><img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg"
+                            alt="Spanish Flag"></a>
+                    <a href="index_nl.html"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg"
+                            alt="Dutch Flag"></a>
+                    <a href="index_tr.html"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg"
+                            alt="Turkish Flag"></a>
+                    <a href="index_af.html"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Afghanistan.svg"
+                            alt="Afghan Flag"></a>
                 </div>
-                <!-- Burger Menu -->
-                <div class="burger-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <div class="current-flag-burger">
-                        <a href="#">
-                            <img src="URL_TO_DEFAULT_FLAG_IMAGE" alt="Current Language Flag">
-                        </a>
-                    </div>
-                </div>
-
+            </nav>
+        </div>
     </header>
-
 
     <!-- Main Content Section -->
     <main>
@@ -126,40 +110,6 @@
     </footer>
 
     <script src="scripts.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const currentFlag = document.querySelector('.current-flag');
-            const otherFlags = document.querySelector('.other-flags');
-
-            // Show other flags menu on hover over current flag
-            currentFlag.addEventListener('mouseenter', () => {
-                otherFlags.style.display = 'block';
-            });
-
-            // Hide other flags menu when mouse leaves both current flag and other flags menu
-            const flagsContainer = document.querySelector('.flags');
-            flagsContainer.addEventListener('mouseleave', () => {
-                otherFlags.style.display = 'none';
-            });
-
-            // Handle flag click to change language
-            const handleFlagClick = (event, url) => {
-                event.preventDefault();
-                if (url && url !== window.location.href) {
-                    window.location.href = url;
-                }
-            };
-
-            // Attach click event listeners to each flag item
-            document.querySelectorAll('.flag-item a').forEach(flagLink => {
-                flagLink.addEventListener('click', (event) => {
-                    const url = flagLink.getAttribute('href');
-                    handleFlagClick(event, url);
-                });
-            });
-        });
-    </script>
-
 </body>
 
 </html>

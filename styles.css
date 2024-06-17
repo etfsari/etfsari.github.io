@@ -38,13 +38,13 @@ header .logo-container {
 
 header .logo {
     width: 100px;
+    /* Adjust size as needed */
     height: auto;
 }
 
 header nav {
     display: flex;
     align-items: center;
-    position: relative;
 }
 
 header nav ul {
@@ -67,56 +67,12 @@ header nav ul li a {
 header .flags {
     display: flex;
     align-items: center;
-    position: relative;
 }
 
 header .flags img {
     width: 30px;
     margin: 0 5px;
     cursor: pointer;
-}
-
-.current-flag img {
-    height: 30px;
-    width: auto;
-    cursor: pointer;
-}
-
-.other-flags {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    display: none;
-    /* Initially hide other flags */
-    z-index: 1000;
-}
-
-.flag-item {
-    padding: 5px;
-}
-
-.flag-item img {
-    height: 30px;
-    width: auto;
-    cursor: pointer;
-}
-
-/* Burger Menu */
-.burger-menu {
-    display: none;
-    cursor: pointer;
-}
-
-.burger-menu span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    background-color: #fff;
 }
 
 /* Responsive Navigation */
@@ -143,6 +99,15 @@ header .flags img {
 
     header .burger-menu {
         display: block;
+        cursor: pointer;
+    }
+
+    header .burger-menu span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: #fff;
     }
 }
 
