@@ -2,7 +2,6 @@
 <html lang="tr">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Easy Language - Dil Hizmetleri</title>
@@ -14,42 +13,61 @@
     <header>
         <div class="container">
             <div class="logo-container">
-                <img src="OIG3.jpg" alt="Easy Language Logosu" class="logo">
+                <img src="OIG3.jpg" alt="Easy Language Logo" class="logo">
             </div>
             <nav>
                 <ul>
-                    <li><a href="index_tr.html">Ana Sayfa</a></li>
-                    <li><a href="index_tr.html#services">Hizmetlerimiz</a></li>
+                    <li><a href="index_tr.html">Anasayfa</a></li>
+                    <li><a href="index_tr.html#services">Hizmetler</a></li>
                     <li><a href="index_tr.html#about">Hakkımızda</a></li>
                     <li><a href="index_tr.html#contact">İletişim</a></li>
                 </ul>
                 <div class="flags">
-                    <a href="index.html"><img
-                            src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
-                            alt="İngiliz Bayrağı"></a>
-                    <a href="index_fr.html"><img src="https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg"
-                            alt="Fransız Bayrağı"></a>
-                    <a href="index_es.html"><img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg"
-                            alt="İspanyol Bayrağı"></a>
-                    <a href="index_nl.html"><img
-                            src="https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg"
-                            alt="Hollanda Bayrağı"></a>
-                    <a href="index_tr.html"><img
-                            src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg"
-                            alt="Türk Bayrağı"></a>
+                    <div class="current-flag">
+                        <a href="index_tr.html"><img
+                                src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg"
+                                alt="Turkish Flag"></a>
+                    </div>
+                    <div class="other-flags">
+                        <div class="flag-item"><a href="index.html"><img
+                                    src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
+                                    alt="English Flag"></a></div>
+                        <div class="flag-item"><a href="index_fr.html"><img
+                                    src="https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg"
+                                    alt="French Flag"></a></div>
+                        <div class="flag-item"><a href="index_es.html"><img
+                                    src="https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg"
+                                    alt="Spanish Flag"></a></div>
+                        <div class="flag-item"><a href="index_nl.html"><img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg"
+                                    alt="Dutch Flag"></a></div>
+                        <div class="flag-item"><a href="index_af.html"><img src="afghan_flag.png" alt="Afghan Flag"></a>
+                        </div>
+                    </div>
                 </div>
-            </nav>
-        </div>
+                <!-- Burger Menu -->
+                <div class="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <div class="current-flag-burger">
+                        <a href="#">
+                            <img src="URL_TO_DEFAULT_FLAG_IMAGE" alt="Current Language Flag">
+                        </a>
+                    </div>
+                </div>
+
     </header>
+
 
     <!-- Main Content Section -->
     <main>
         <!-- Home Section -->
         <section id="home">
             <div class="container">
-                <h2>Easy Language'e Hoş Geldiniz</h2>
-                <p>Profesyonel dil hizmetleri için tek durak çözümünüz. Belge, web sitesi çevirisi ve ihtiyaçlarınıza
-                    uygun dil eğitimi sunuyoruz.</p>
+                <h2>Easy Language'a Hoşgeldiniz</h2>
+                <p>Profesyonel dil hizmetleri için tek adresiniz. Çeviri, tercüme ve dil eğitimi ihtiyaçlarınıza göre
+                    uyarlanmış hizmetler sunuyoruz.</p>
                 <button id="learnMoreBtn">Daha Fazla Bilgi</button>
             </div>
         </section>
@@ -63,12 +81,12 @@
                     <p>Belgeler, web siteleri ve daha fazlası için doğru ve profesyonel çeviri hizmetleri.</p>
                 </div>
                 <div class="service">
-                    <h3>Simültane Çeviri</h3>
-                    <p>Toplantılar, konferanslar ve etkinlikler için uzman simultane çeviri hizmetleri.</p>
+                    <h3>Tercüme</h3>
+                    <p>Toplantılar, konferanslar ve etkinlikler için uzman tercüme hizmetleri.</p>
                 </div>
                 <div class="service">
                     <h3>Dil Eğitimi</h3>
-                    <p>Bireylere ve işletmelere özel dil eğitimi programları.</p>
+                    <p>Bireyler ve işletmeler için kişiselleştirilmiş dil eğitim programları.</p>
                 </div>
             </div>
         </section>
@@ -77,10 +95,9 @@
         <section id="about">
             <div class="container">
                 <h2>Hakkımızda</h2>
-                <p>Easy Language, yüksek kaliteli dil hizmetleri aracılığıyla iletişim boşluklarını kapatmayı
-                    taahhüt eder. Deneyimli profesyonel ekibimiz, sizi küreselleşmiş bir dünyada başarıya ulaştırmak
-                    için
-                    burada.</p>
+                <p>Easy Language, yüksek kaliteli dil hizmetleri ile iletişim engellerini aşmayı taahhüt eder. Deneyimli
+                    profesyonellerden oluşan ekibimiz, küreselleşmiş bir dünyada başarıya ulaşmanıza yardımcı olmaya
+                    adanmıştır.</p>
             </div>
         </section>
 
@@ -88,11 +105,11 @@
         <section id="contact">
             <div class="container">
                 <h2>Bize Ulaşın</h2>
-                <p>Sorularınız mı var ya da bir teklif mi istiyorsunuz? Bizimle iletişime geçin!</p>
+                <p>Sorularınız mı var veya bir teklif mi istiyorsunuz? Bizimle iletişime geçin!</p>
                 <!-- modify this form HTML and place wherever you want your form -->
                 <form action="https://formspree.io/f/mayrrvwj" method="POST">
                     <label>
-                        mesajınız:
+                        Mesajınız:
                         <textarea name="message"></textarea>
                     </label>
                     <!-- your other form fields go here -->
@@ -110,6 +127,40 @@
     </footer>
 
     <script src="scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const currentFlag = document.querySelector('.current-flag');
+            const otherFlags = document.querySelector('.other-flags');
+
+            // Show other flags menu on hover over current flag
+            currentFlag.addEventListener('mouseenter', () => {
+                otherFlags.style.display = 'block';
+            });
+
+            // Hide other flags menu when mouse leaves both current flag and other flags menu
+            const flagsContainer = document.querySelector('.flags');
+            flagsContainer.addEventListener('mouseleave', () => {
+                otherFlags.style.display = 'none';
+            });
+
+            // Handle flag click to change language
+            const handleFlagClick = (event, url) => {
+                event.preventDefault();
+                if (url && url !== window.location.href) {
+                    window.location.href = url;
+                }
+            };
+
+            // Attach click event listeners to each flag item
+            document.querySelectorAll('.flag-item a').forEach(flagLink => {
+                flagLink.addEventListener('click', (event) => {
+                    const url = flagLink.getAttribute('href');
+                    handleFlagClick(event, url);
+                });
+            });
+        });
+    </script>
+
 </body>
 
 </html>

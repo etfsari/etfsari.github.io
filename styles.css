@@ -12,6 +12,12 @@ body {
     padding: 20px;
 }
 
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
+
 /* Header Styles */
 header {
     background-color: #004aad;
@@ -23,7 +29,6 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 header .logo-container {
@@ -39,6 +44,7 @@ header .logo {
 header nav {
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 header nav ul {
@@ -46,7 +52,6 @@ header nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-wrap: wrap;
 }
 
 header nav ul li {
@@ -62,12 +67,83 @@ header nav ul li a {
 header .flags {
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 header .flags img {
     width: 30px;
     margin: 0 5px;
     cursor: pointer;
+}
+
+.current-flag img {
+    height: 30px;
+    width: auto;
+    cursor: pointer;
+}
+
+.other-flags {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    display: none;
+    /* Initially hide other flags */
+    z-index: 1000;
+}
+
+.flag-item {
+    padding: 5px;
+}
+
+.flag-item img {
+    height: 30px;
+    width: auto;
+    cursor: pointer;
+}
+
+/* Burger Menu */
+.burger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.burger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #fff;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #004aad;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    header .flags {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header .burger-menu {
+        display: block;
+    }
 }
 
 /* Section Styles */
@@ -147,47 +223,4 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-    header .container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    header nav ul {
-        flex-direction: column;
-    }
-
-    header nav ul li {
-        margin: 10px 0;
-    }
-
-    header .flags {
-        margin-top: 10px;
-    }
-
-    section {
-        padding: 40px 10px;
-    }
-
-    button {
-        padding: 10px 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    header .logo {
-        width: 80px;
-    }
-
-    header nav ul li {
-        margin: 5px 0;
-    }
-
-    button {
-        padding: 8px 16px;
-        font-size: 14px;
-    }
 }

@@ -2,10 +2,9 @@
 <html lang="es">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Easy Language - Servicios Lingüísticos</title>
+    <title>Easy Language - Servicios de Idiomas</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -14,33 +13,52 @@
     <header>
         <div class="container">
             <div class="logo-container">
-                <img src="OIG3.jpg" alt="Logo Easy Language" class="logo">
+                <img src="OIG3.jpg" alt="Easy Language Logo" class="logo">
             </div>
             <nav>
                 <ul>
                     <li><a href="index_es.html">Inicio</a></li>
                     <li><a href="index_es.html#services">Servicios</a></li>
-                    <li><a href="index_es.html#about">Sobre Nosotros</a></li>
+                    <li><a href="index_es.html#about">Acerca de</a></li>
                     <li><a href="index_es.html#contact">Contacto</a></li>
                 </ul>
                 <div class="flags">
-                    <a href="index.html"><img
-                            src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
-                            alt="Bandera Inglesa"></a>
-                    <a href="index_fr.html"><img src="https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg"
-                            alt="Bandera Francesa"></a>
-                    <a href="index_es.html"><img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg"
-                            alt="Bandera Española"></a>
-                    <a href="index_nl.html"><img
-                            src="https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg"
-                            alt="Bandera Holandesa"></a>
-                    <a href="index_tr.html"><img
-                            src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg"
-                            alt="Bandera Turca"></a>
+                    <div class="current-flag">
+                        <a href="index_es.html"><img
+                                src="https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg"
+                                alt="Spanish Flag"></a>
+                    </div>
+                    <div class="other-flags">
+                        <div class="flag-item"><a href="index.html"><img
+                                    src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
+                                    alt="English Flag"></a></div>
+                        <div class="flag-item"><a href="index_fr.html"><img
+                                    src="https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg"
+                                    alt="French Flag"></a></div>
+                        <div class="flag-item"><a href="index_nl.html"><img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg"
+                                    alt="Dutch Flag"></a></div>
+                        <div class="flag-item"><a href="index_tr.html"><img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg"
+                                    alt="Turkish Flag"></a></div>
+                        <div class="flag-item"><a href="index_af.html"><img src="afghan_flag.png" alt="Afghan Flag"></a>
+                        </div>
+                    </div>
                 </div>
-            </nav>
-        </div>
+                <!-- Burger Menu -->
+                <div class="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <div class="current-flag-burger">
+                        <a href="#">
+                            <img src="URL_TO_DEFAULT_FLAG_IMAGE" alt="Current Language Flag">
+                        </a>
+                    </div>
+                </div>
+
     </header>
+
 
     <!-- Main Content Section -->
     <main>
@@ -48,9 +66,9 @@
         <section id="home">
             <div class="container">
                 <h2>Bienvenido a Easy Language</h2>
-                <p>Su solución integral para servicios lingüísticos profesionales. Ofrecemos servicios de traducción,
-                    interpretación y formación lingüística adaptados a sus necesidades.</p>
-                <button id="learnMoreBtn">Saber más</button>
+                <p>Su solución integral para servicios de idiomas profesionales. Ofrecemos servicios de traducción,
+                    interpretación y formación de idiomas adaptados a sus necesidades.</p>
+                <button id="learnMoreBtn">Más información</button>
             </div>
         </section>
 
@@ -67,8 +85,8 @@
                     <p>Servicios de interpretación expertos para reuniones, conferencias y eventos.</p>
                 </div>
                 <div class="service">
-                    <h3>Formación Lingüística</h3>
-                    <p>Programas de formación lingüística personalizados para individuos y empresas.</p>
+                    <h3>Formación de Idiomas</h3>
+                    <p>Programas de formación de idiomas personalizados para individuos y empresas.</p>
                 </div>
             </div>
         </section>
@@ -77,22 +95,21 @@
         <section id="about">
             <div class="container">
                 <h2>Sobre Nosotros</h2>
-                <p>Easy Language se compromete a cerrar las brechas de comunicación mediante servicios lingüísticos de
-                    alta calidad. Nuestro equipo de profesionales experimentados está dedicado a ayudarlo a tener éxito
-                    en
-                    un mundo globalizado.</p>
+                <p>Easy Language se compromete a superar las barreras de comunicación mediante servicios de idiomas de
+                    alta calidad. Nuestro equipo de profesionales experimentados está dedicado a ayudarle a tener éxito
+                    en un mundo globalizado.</p>
             </div>
         </section>
 
         <!-- Contact Section -->
         <section id="contact">
             <div class="container">
-                <h2>Contacto</h2>
-                <p>¿Tiene preguntas o necesita un presupuesto? ¡Contáctenos!</p>
-                <!-- here goes the formspree form -->
+                <h2>Contáctenos</h2>
+                <p>¿Tiene preguntas o necesita una cotización? ¡Póngase en contacto con nosotros!</p>
+                <!-- modify this form HTML and place wherever you want your form -->
                 <form action="https://formspree.io/f/mayrrvwj" method="POST">
                     <label>
-                        Mensaje:
+                        Su mensaje:
                         <textarea name="message"></textarea>
                     </label>
                     <!-- your other form fields go here -->
@@ -110,6 +127,40 @@
     </footer>
 
     <script src="scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const currentFlag = document.querySelector('.current-flag');
+            const otherFlags = document.querySelector('.other-flags');
+
+            // Show other flags menu on hover over current flag
+            currentFlag.addEventListener('mouseenter', () => {
+                otherFlags.style.display = 'block';
+            });
+
+            // Hide other flags menu when mouse leaves both current flag and other flags menu
+            const flagsContainer = document.querySelector('.flags');
+            flagsContainer.addEventListener('mouseleave', () => {
+                otherFlags.style.display = 'none';
+            });
+
+            // Handle flag click to change language
+            const handleFlagClick = (event, url) => {
+                event.preventDefault();
+                if (url && url !== window.location.href) {
+                    window.location.href = url;
+                }
+            };
+
+            // Attach click event listeners to each flag item
+            document.querySelectorAll('.flag-item a').forEach(flagLink => {
+                flagLink.addEventListener('click', (event) => {
+                    const url = flagLink.getAttribute('href');
+                    handleFlagClick(event, url);
+                });
+            });
+        });
+    </script>
+
 </body>
 
 </html>
