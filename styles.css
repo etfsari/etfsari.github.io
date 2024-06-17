@@ -78,31 +78,67 @@ header .flags img {
 /* Responsive Navigation */
 @media (max-width: 768px) {
     header .flags {
-        flex-direction: row;
         display: flex;
-        justify-content: flex-end;
-        /* Adjust alignment as per your design */
         align-items: center;
-        /* Adjust alignment as per your design */
-        width: auto;
-        /* Adjust width as needed */
         margin-right: 10px;
-        /* Optional: Adjust margins for better spacing */
+        /* Adjust margin for spacing */
+    }
+
+    .current-flag img {
+        height: 30px;
+        /* Adjust size as needed */
+        width: auto;
+        cursor: pointer;
+    }
+
+    .other-flags {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        display: none;
+        z-index: 1000;
+    }
+
+    .flag-item {
+        padding: 5px;
+    }
+
+    .flag-item img {
+        height: 30px;
+        /* Adjust size as needed */
+        width: auto;
+        cursor: pointer;
+    }
+
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #004aad;
+        position: absolute;
+        top: 60px;
+        left: 0;
     }
 
     header nav ul li {
         margin: 10px 0;
     }
 
-    header .flags img {
+    header .burger-menu {
         display: block;
-        /* Ensure flag images are displayed */
-        width: 30px;
-        /* Adjust size as needed */
-        height: auto;
-        margin: 0 5px;
-        /* Optional: Adjust margins for better spacing */
         cursor: pointer;
+    }
+
+    header .burger-menu span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: #fff;
     }
 }
 
