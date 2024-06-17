@@ -31,11 +31,6 @@ header .container {
     align-items: center;
 }
 
-header .logo-container {
-    display: flex;
-    align-items: center;
-}
-
 header .logo {
     width: 100px;
     /* Adjust size as needed */
@@ -71,6 +66,7 @@ header .flags {
 
 header .flags img {
     width: 30px;
+    /* Adjust size as needed */
     margin: 0 5px;
     cursor: pointer;
 }
@@ -78,8 +74,6 @@ header .flags img {
 /* Responsive Navigation */
 @media (max-width: 768px) {
     header .flags {
-        display: flex;
-        align-items: center;
         margin-right: 10px;
         /* Adjust margin for spacing */
     }
@@ -101,6 +95,12 @@ header .flags img {
         border-radius: 4px;
         display: none;
         z-index: 1000;
+        max-height: 200px;
+        /* Limit maximum height for scroll */
+        overflow-y: auto;
+        /* Allow vertical scrolling */
+        width: 100%;
+        /* Take full width of the screen */
     }
 
     .flag-item {
@@ -141,8 +141,6 @@ header .flags img {
         background-color: #fff;
     }
 }
-
-
 
 /* Section Styles */
 section {
